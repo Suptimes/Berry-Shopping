@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Add to Cart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="assets/cat.png">
+            <input type="text" id="input-field" placeholder="New Item">
+            <button id="add-button">Add to cart</button>
+            <ul id="shopping-list">
+            </ul>
+        </div>
+        <form>
+            <!-- <label for="fruit">Choose fruits:</label> -->
+            <select class="select" id="fruit" name="fruit">
+                <option disabled selected value> Choose Fruits </option>
+                <option value="Apples">Apples</option>
+                <option value="Bananas">Bananas</option>
+                <option value="Oranges">Oranges</option>
+                <option value="Pears">Pears</option>
+                <option value="Grapes">Grapes</option>
+            </select>
+            <button type="button" class="add-button2">Add Fruits</button>
+            
+            <!-- <label for="veggie">Choose veggies:</label> -->
+            <select class="select" id="veggie" name="veggie">
+                <option disabled selected value> Choose Veggies </option>
+                <option value="Tomatoes">Tomatoes</option>
+                <option value="Potatoes">Potatoes</option>
+                <option value="Carrots">Carrots</option>
+                <option value="Cucumber">Cucumber</option>
+                <option value="Onions">Onions</option>
+            </select>
+            <button type="button" class="add-button2">Add Veggie</button>
+
+            <select class="select" id="Dairy" name="Dairy">
+                <option disabled selected value> Choose Dairy </option>
+                <option value="Milk">Milk</option>
+                <option value="Cheese">Cheese</option>
+                <option value="Butter">Butter</option>
+                <option value="Yoghurt">Yoghurt</option>
+                <option value="Eggs">Eggs</option>
+            </select>
+            <button type="button" class="add-button2">Add Dairy </button>
+
+            <select class="select" id="Frozen" name="Frozen">
+                <option disabled selected value> Choose Frozen</option>
+                <option value="Fries">Fries</option>
+                <option value="Fish">Fish</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Nuggets">Nuggets</option>
+                <option value="Pizza">Pizza</option>
+            </select>
+            <button type="button" class="add-button2">Add Frozen</button>
+
+            <select class="select" id="Cleaning" name="Cleaning">
+                <option disabled selected value> Choose Cleaning </option>
+                <option value="Toilet Paper">Toilet Paper</option>
+                <option value="Bleach">Bleach</option>
+                <option value="Disinfectant">Disinfectant</option>
+                <option value="Dishwasher">Dishwasher</option>
+                <option value="Fabric Softener">Fabric Softener</option>
+            </select>
+            <button type="button" class="add-button2">Add Cleaning</button>
+        </form>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
