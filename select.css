@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     padding: 0;
@@ -59,6 +58,7 @@ ul {
     gap: 10px;
 }
 
+
 ul li,
 .items {
     font-size: 20px;
@@ -115,6 +115,7 @@ select {
 
 input[type="checkbox"]  {
     display: none;
+
  }
 
  .selected {
@@ -126,7 +127,6 @@ input[type="checkbox"]  {
     margin: 20px 0px;
     width: 320px;
 }
-
 
 
 #options{
@@ -160,4 +160,17 @@ a {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+}
+label span {
+    transition: 0.5s;
+    overflow: hidden;
+}
+.items span:before{
+    content: "";
+    background-color: #FFECC7;
+    
+}
+
+input[type="checkbox"]:checked + label.items {
+    background-color: #FFECC7;
 }
