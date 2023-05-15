@@ -12,7 +12,10 @@ const shoppingListInDB = ref(database, "shoppingList")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const addButtonEll = document.querySelectorAll(".add-button2")
-//const selectedItem = document.querySelectorAll(".selected")
+const addButton3 = document.querySelectorAll(".add-button3")
+const formEl = document.querySelector("form")   //to change the form name
+const inputBox = Array.from(document.querySelectorAll("input"))
+console.log(inputBox) // to check if working
 const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
@@ -86,26 +89,39 @@ for (let i = 0; i < addButtonEll.length; i++) {
       
     })
   }
-
-
-
-
-
-// for (let i = 0; i < addButtonEll.length; i++) {
-
-//     addButtonEll[i].addEventListener("click", function(itemX) {
-
-//         itemX = document.getElementById(`${itemX}`).value
-//         push(shoppingListInDB, itemX)
-        
-//         clearInputFieldEl()
-//     })}
-
-
-// addButtonEll.addEventListener("click", function() {
-
-//     let fruit = document.getElementById("fruit").value
-//     push(shoppingListInDB, fruit)
+  
+for (let i = 0; i<inputBox.length;i++){
+//   inputBox[i].addEventListener("click", function() {
+    let checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
+    if (inputBox[i].checked === "true") {
+        // Highlight the selected items
+    for (let j = 0; j < checkboxes.length; j++) {
+        checkboxes[j].nextElementSibling.classList.add("selected");
+      }
+    } else {
+        for (let j = 0; j < checkboxes.length; j++) {
+            checkboxes[j].nextElementSibling.classList.remove("selected");
+          }
+    }
     
-//     clearInputFieldEl()
-// })
+}
+//   })}
+
+ 
+  
+addButton3.forEach(button => {
+
+    button.addEventListener("click", function() {
+        const form = this.closest("form");
+        const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+        const selectedItems = [];
+
+        checkboxes.forEach(checkbox => selectedItems.push(checkbox.value));
+        selectedItems.forEach(item => push(shoppingListInDB, item));
+
+      
+
+        form.reset();
+    });
+});
+
