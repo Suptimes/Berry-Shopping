@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Berry</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="select.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="/index.html"><span id="options">More</span></a>
+            <img src="assets/cat.png">
+            <input type="text" id="input-field" placeholder="New Item">
+            <button id="add-button">Add to cart</button>
+            <ul id="shopping-list">
+            </ul>
+        </div>
+
+        <div class="div2">
+            <form>
+                <label class="choose" for="fruits">Choose fruits:</label>
+                <div class="formm">
+                <input type="checkbox" id="apple" name="fruits" value="Apple">
+                <label class="items" for="apple">Apple</label>
+                <input type="checkbox" id="banana" name="fruits" value="Banana">
+                <label class="items" for="banana">Banana</label>
+                <input type="checkbox" id="Pineapple" name="fruits" value="Pineapple">
+                <label class="items" for="Pineapple">Pineapple</label>
+                <input type="checkbox" id="orange" name="fruits" value="Orange">
+                <label class="items" for="orange">Orange</label>
+                <input type="checkbox" id="Strawberries" name="fruits" value="Strawberries">
+                <label class="items" for="Strawberries">Strawberries</label>
+                </div>
+                <button class="add-button3" type="button">Add Fruits</button>
+            </form>
+        </div>
+
+        <div class="div2">
+            <form>
+                <label class="choose" for="veggies">Choose veggies:</label>
+                <div class="formm">
+                <input type="checkbox" id="Tomatoes" name="veggies" value="Tomatoes">
+                <label class="items" for="Tomatoes">Tomatoes</label>
+                <input type="checkbox" id="Potatoes" name="veggies" value="Potatoes">
+                <label class="items" for="Potatoes">Potatoes</label>
+                <input type="checkbox" id="Onions" name="veggies" value="Onions">
+                <label class="items" for="Onions">Onions</label>
+                <input type="checkbox" id="Carrots" name="veggies" value="Carrots">
+                <label class="items" for="Carrots">Carrots</label>
+                <input type="checkbox" id="Eggplants" name="veggies" value="Eggplants">
+                <label class="items" for="Eggplants">Eggplants</label>
+                </div>
+                <button class="add-button3" type="button">Add Veggies</button>
+            </form>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
