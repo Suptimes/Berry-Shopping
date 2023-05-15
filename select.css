@@ -145,7 +145,6 @@ input[type="checkbox"]  {
 
 #options:hover {
     background-color: #FFECC7;
-    cursor: pointer;
 }
 
 a {
@@ -160,4 +159,5 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    cursor: default;
   }
