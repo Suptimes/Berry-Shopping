@@ -117,10 +117,9 @@ select {
 
 #options:hover {
     background-color: #FFECC7;
-    cursor: pointer;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
-  }
+}
